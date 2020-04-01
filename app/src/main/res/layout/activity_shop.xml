@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ShopActivity">
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rcv"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"></androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="全选"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:gravity="center"
+            android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="几件"/>
+        <TextView
+            android:id="@+id/price"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="价格"/>
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去结算"
+        android:textColor="#ffff"
+        android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+</LinearLayout>
