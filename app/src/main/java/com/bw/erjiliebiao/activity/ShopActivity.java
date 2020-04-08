@@ -185,8 +185,8 @@ TextView pricess;
               }
             }
         }
-        Intent intent = new Intent(ShopActivity.this, CreatOrderActivity.class);
-       intent.putParcelableArrayListExtra("CreatOrder", (ArrayList<? extends Parcelable>) selectOrderlist);
-        startActivity(intent);
+//        Intent intent = new Intent(ShopActivity.this, CreatOrderActivity.class);
+//       intent.putParcelableArrayListExtra("CreatOrder", (ArrayList<? extends Parcelable>) selectOrderlist);
+//        startActivity(intent);
     }
 }

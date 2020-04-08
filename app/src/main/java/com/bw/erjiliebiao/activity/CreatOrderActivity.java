@@ -40,10 +40,7 @@ public class CreatOrderActivity extends BaseActivity implements CreatOrderContra
         ArrayList<String> creatOrderlist = intent.getStringArrayListExtra("CreatOrder");
         Log.i("xxx",creatOrderlist+"");
 
-        BasePresenter presenter = getPresenter();
-        if (presenter instanceof CreateOrderPresenter){
-           // ((CreateOrderPresenter) presenter).doCreatOrder("33330","158572414925633330",);
-        }
+
     }
 
     @Override

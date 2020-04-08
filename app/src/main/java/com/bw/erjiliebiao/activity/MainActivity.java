@@ -56,7 +56,7 @@ EditText pwd;
         SpUtile.putString(this,SpUtile.USERINFOR,SpUtile.USERID,userId+"");
         SpUtile.putString(this,SpUtile.USERINFOR,SpUtile.SESSIONID,sessionId);
 
-        Intent intent = new Intent(MainActivity.this, ShopActivity.class);
+        Intent intent = new Intent(MainActivity.this, Main2Activity.class);
         startActivity(intent);
         finish();
     }

@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
+import cn.jpush.android.api.JPushInterface;
 
 public abstract class BaseActivity<P extends BasePresenter> extends AppCompatActivity implements IBaseView{
 P mPresenter;
@@ -19,6 +20,8 @@ P mPresenter;
         mPresenter=initPresenter();
         initView();
         getData();
+        JPushInterface.setDebugMode(true);
+        JPushInterface.init(this);
     }
     public P getPresenter(){
         return mPresenter;
